@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROV25</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/eventemitter2@6.4.9/lib/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/roslib@1/build/roslib.min.js"></script>
+        
+    <script type="text/javascript" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./MIA.png" alt="MIA">
+        </figure>
+    </header>
+    <main>
+        <div class="container">
+            <div class="pub">
+                <h1 style="text-align: center; margin: 0; padding: 0; height: fit-content;">Publishing</h1>
+                <form action="">
+                    <label name="topic" for="topic" style="font-weight: bold;">Topic</label>
+                    <select name="" id="topic">
+                        <option>Pressure</option>
+                        <option>Yaw</option>
+                        <option>Pitch</option>
+                        <option>Roll</option>
+                        <option>Leakage</option>
+                        <option>Pressure_sp</option>
+                        <option>Solenoids</option>
+                        <option>Pressure_pid</option>
+                        <option>Move</option>
+                    </select>
+                    <textarea style="padding: 0; margin: 0; width: 85%; justify-self: end" id="msg"></textarea>
+                </form>
+            </div>
+            <div class="sub">
+                <h1 style="text-align: center; margin: 0; padding: 0;">Subscribing</h1>
+                <form action="">
+                    <select name="topic" id="topic">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
